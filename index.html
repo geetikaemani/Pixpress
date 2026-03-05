@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixpress</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Logo intro -->
+  <div class="logo-intro">
+    <img src="assets/logo.png" alt="Pixpress Logo" />
+  </div>
+
+  <!-- Main container -->
+  <div class="container hidden">
+    <h1>Welcome to <span class="highlight">Pixpress</span> ✨</h1>
+
+    <!-- Upload + preview + caption card -->
+    <div class="card">
+      <label for="imageUpload" class="styled-upload-btn">📸 Upload an image</label>
+      <input type="file" id="imageUpload" accept="image/*" class="hidden-file" />
+
+      <img id="previewImage" class="image-preview hidden" />
+      <p id="captionOutput" class="caption-text">Your caption will appear here...</p>
+
+      <button id="playBtn">🎧 Play Caption</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
